@@ -65,12 +65,6 @@ for($i = 0; $i < count($alunni); $i++){
     echo 'MEDIA';
     var_dump($media);
 };
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,20 +75,18 @@ for($i = 0; $i < count($alunni); $i++){
   <title>Snack 7</title>
 </head>
 <body>
-   <?php for($i = 0; $i < count($alunni); $i++): ?>
-      <h1><?php echo $alunni[$i]['nome'] .' '. $alunni[$i]['cognome'] ?></h1>
-      <ul>
-        <li>
-          <i><?php echo 'Voto matematica: ' . $alunni[$i]['voti']['0']?></i>
-        </li>
-        <li>
-          <i><?php echo 'Voto italiano: ' . $alunni[$i]['voti']['1']?></i>
-        </li>
-        <li>
-          <i><?php echo 'Voto inglese: ' . $alunni[$i]['voti']['2']?></i>
-        </li>
-      </ul>
-  <?php endfor; ?>
+<?php for($i = 0; $i < count($alunni); $i++): ?> 
 
+  <h1><?php echo $alunni[$i]['nome'] . ' ' . $alunni[$i]['cognome'] ?></h1>
+
+  <?php for($index = 0; $index < count($alunni[$i]['voti']); $index++): ?>
+
+    <p><?php echo $alunni[$i]['voti'][$index] ?></p>
+
+  <?php endfor;?>
+
+
+
+<?php endfor;?>
 </body>
 </html>
