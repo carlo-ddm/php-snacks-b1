@@ -94,3 +94,5 @@ function mediaVoto($voti){
   <?php endforeach; ?>
 </body>
 </html>
+
+<!-- Ricorda l'utilizzo di array_sum() per sommare i numeri distribuiti in un array -->
