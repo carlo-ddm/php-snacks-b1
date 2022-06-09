@@ -52,7 +52,7 @@ var_dump($matches);
 <body>
 <ul>
     <?php for($i = 0; $i < count($matches); $i++): ?>
-      <!-- il codice HTML verrà ciclato -->
+      
       <li><?php echo $matches[$i]['casa'] . ' - ' . $matches[$i]['ospite'] . ' | ' . $matches[$i]['punti']['casa'] . ' - ' . $matches[$i]['punti']['ospite']?></li>
       
     <?php endfor; ?>
