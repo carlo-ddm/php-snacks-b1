@@ -90,7 +90,7 @@ function mediaVoto($voti){
     <h1>
       <?php echo $alunno['nome'] . ' ' . $alunno['cognome']?>
     <h1>
-    <i>media: <?php echo mediaVoto($alunno['voti']) ?></i>
+    <i>media: <?php echo round(mediaVoto($alunno['voti'])) ?></i>
   <?php endforeach; ?>
 </body>
 </html>
